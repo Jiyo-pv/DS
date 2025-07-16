@@ -11,16 +11,18 @@ int main()
 	}
 	for(i=0;i<n;i++)
 	{
-		for(j=i;j<n;j++)
+		for(j=0;j<n;j++)
 		{
-			if(track[j]!=-1)
+			if(a[i]==a[j] && track[i]!=-1)  
 			{
-				track[i]++;
-				track[j]=-1;
+				track[i]=track[i]+1;
+				if(i!=j)
+				{
+					track[j]=-1;
+				}	
 			}
 		}
 	}
-	
 	for(i=0;i<n;i++)
 	{
 		if(track[i]!=-1)
