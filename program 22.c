@@ -22,6 +22,15 @@ int main()
 			scanf("%d",&a[i][j]);
 		}
 	}
+	printf("MATRIX  ENTERED\n");
+	for(i=0;i<m;i++)
+	{
+		for(j=0;j<n;j++)
+		{
+			printf("%d\t",a[i][j]);
+		}
+		printf("\n");	
+	}
 	//count used to store  no of non zero values	
 	count=0;	
 	//loop through the matrix to find non zero values
